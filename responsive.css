@@ -1,0 +1,395 @@
+/* Navigation Bar */
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /* transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out; */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+/* Navigation Bar closes */
+
+/* Home */
+/* >800px */
+@media screen and (max-width: 800px) {
+  .home-content {
+    width: 100%;
+  }
+}
+
+/* >500px */
+@media screen and (max-width: 500px) {
+  .home-header {
+    font-size: 50px;
+  }
+
+  .sub-header {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+  }
+}
+
+/* >400px */
+@media screen and (max-width: 500px) {
+  .home-content {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .home-header {
+    font-size: 50px;
+  }
+
+  .sub-header {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 12px;
+  }
+}
+/* Home closes */
+
+/* Review */
+/* >400px */
+@media screen and (max-width: 400px) {
+  .review {
+    padding: 0px 20px;
+  }
+
+  .review h2 {
+    font-size: 25px;
+  }
+
+  .review p {
+    font-size: 12px;
+  }
+}
+
+/* >500px */
+@media screen and (max-width: 600px) {
+  .review {
+    padding: 0px 30px;
+  }
+
+  .review h2 {
+    font-size: 25px;
+  }
+
+  .review p {
+    font-size: 15px;
+  }
+}
+/* Review closes */
+
+/* Cloud */
+/* >1100px */
+@media screen and (max-width: 1100px) {
+  .cloud {
+    justify-content: space-between;
+  }
+
+  .cloud-left {
+    width: 60%;
+  }
+
+  .cloud-right {
+    width: 40%;
+  }
+
+  .cloud-right-box {
+    width: 40%;
+    gap: 21px;
+    align-items: center;
+  }
+}
+
+/* >800px */
+@media screen and (max-width: 800px) {
+  .cloud-left h2 {
+    font-size: 45px;
+  }
+
+  .cloud-left p {
+    font-size: 15px;
+  }
+
+  .flex {
+    width: 49%;
+  }
+}
+
+/* >500px */
+@media screen and (max-width: 500px) {
+  .cloud {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .cloud-left {
+    width: 100%;
+    height: 50%;
+  }
+  .cloud-right {
+    width: 80%;
+    height: 40%;
+  }
+
+  .cloud-right-box h2 {
+    font-size: 10px;
+  }
+
+  .cloud-right-box p {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .cloud-right-box:hover .cloud-content {
+    transform: translatey(-110px);
+  }
+}
+
+/* Cloud closes */
+
+/* Technology Partners */
+
+/* Technology Partners closes */
+
+/* Ai-capabilities */
+/* >800px */
+@media screen and (max-width: 800px) {
+  .ai-capabilities {
+    flex-direction: row-reverse;
+  }
+
+  .ai-cap-left {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .ai-cap-left h2 {
+    font-size: 35px;
+  }
+
+  .ai-cap-left p {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .ai-cap-right {
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .ai-cap-box {
+    padding: 10px;
+    width: 40%;
+    height: 30%;
+  }
+
+  .ai-cap-box h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .sub-box {
+    height: 50%;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+/* >500px */
+@media screen and (max-width: 500px) {
+  .ai-capabilities {
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    justify-content: unset;
+  }
+
+  .ai-cap-left {
+    width: 100%;
+    height: 40%;
+  }
+
+  .ai-cap-right {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+  }
+
+  .ai-cap-box {
+    width: 40%;
+    height: 50%;
+  }
+}
+
+/* Ai-capabilities closes*/
+
+/* Contact Page */
+/* 800px */
+@media screen and (max-width: 800px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact_left-1,
+  .contact_left-2 {
+    width: 40%;
+  }
+
+  .contact section {
+    width: 100%;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+}
+
+/* Contact Page */
+/* >500px */
+@media screen and (max-width: 500px) {
+  .contact {
+    background: url(.//Assets/mobile-contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+  }
+
+  .contact_left {
+    display: none;
+  }
+
+  .contact_right {
+    width: 100%;
+  }
+
+  .contact section {
+    width: 100%;
+  }
+
+  .contact p {
+    font-size: 15px;
+  }
+
+  .contact input,
+  textarea {
+    width: 100%;
+  }
+}
+/* Contact page closes */
+
+/* Footer */
+
+/*  Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* >500px  */
+@media (max-width: 500px) and (min-width: 300px) {
+  /* Top banner section */
+  .footer-top {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .cta-text h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .cta-text ul {
+    padding-left: 0;
+    font-size: 13px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Footer grid layout becomes stacked */
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .footer-col ul li a {
+    font-size: 13px;
+  }
+
+  /* Footer bottom section */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Footer closes */
