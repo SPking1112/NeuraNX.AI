@@ -2,6 +2,10 @@
 
 /* Responsive Mobile Styles */
 @media (max-width: 768px) {
+  .nav {
+    left: 100px;
+  }
+
   .nav-links {
     width: 100%;
     display: none;
@@ -147,13 +151,18 @@
   .cloud {
     height: 100vh;
     flex-direction: column;
+    padding: 0;
   }
 
   .cloud-left {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
-  .cloud-right {
+
+  .cloud-left h2 {
+    /* font-size: 40px; */
+  }
+  /* .cloud-right {
     width: 80%;
     height: 40%;
   }
@@ -169,7 +178,7 @@
 
   .cloud-right-box:hover .cloud-content {
     transform: translatey(-110px);
-  }
+  } */
 }
 
 /* Cloud closes */
