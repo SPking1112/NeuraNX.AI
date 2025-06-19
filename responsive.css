@@ -174,8 +174,73 @@
 
 /* Cloud closes */
 
-/* Technology Partners */
+/* Why-us */
+/* >800px */
+@media screen and (max-width: 800px) {
+  .why-us {
+    height: 85vh;
+  }
 
+  .why-us-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .why-us-box {
+    width: 35%;
+    height: 50%;
+  }
+}
+
+/* >500px */
+@media screen and (max-width: 500px) {
+  .why-us {
+    padding: 0;
+    height: 100vh;
+  }
+
+  .why-us-content {
+    flex-direction: column;
+  }
+
+  .why-us h1 {
+    font-size: 28px;
+  }
+
+  .why-us-box {
+    height: 20%;
+    width: 100%;
+  }
+
+  .why-us-box h2 {
+    font-size: 15px;
+  }
+
+  .why-us-box p {
+    font-size: 12px;
+  }
+}
+
+/* why-us closes */
+
+/* Technology Partners */
+/* >500px */
+@media screen and (max-width: 500px) {
+  .tech-partners h2 {
+    font-size: 30px;
+  }
+  .tech-partners p {
+    font-size: 14px;
+  }
+}
+
+/* >400px */
+@media screen and (max-width: 400px) {
+  .tech-partners h2 {
+    font-size: 20px;
+  }
+}
 /* Technology Partners closes */
 
 /* Ai-capabilities */
